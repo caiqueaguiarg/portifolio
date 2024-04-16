@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fjalla+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap');
+:root {
+    --cor-principal:#12372A;
+    --cor-secundaria: #c2caba;
+    --cor-terciaria:#FBFADA;
+    --cor-hover: #436850;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* height: 100vh; */
+    box-sizing: border-box;
+    background-color: var(--cor-principal);
+    color: var(--cor-secundaria);
+}
+
+.cabeçalho {
+    padding: 2% 0% 0% 15% ;
+}
+
+.cabeçalho-menu{
+    font-family: "DM Sans", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--cor-terciaria);
+    display: flex;
+    gap: 80px;
+    text-decoration: none;
+}
+
+.cabeçalho-menu-home {
+    color: var(--cor-terciaria);
+    text-decoration: none;
+}
+
+.cabeçalho-menu-sobremim {
+    color:var(--cor-terciaria);
+    text-decoration: none;
+}
+a:hover {
+    background-color: var(--cor-hover);
+}
+
+
+.rodape {
+    padding: 24px;
+    color: var(--cor-secundaria);
+    background-color:var(--cor-hover);
+    text-align: center;
+    font-family: "DM Sans", sans-serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.titulo{
+    font-family: "DM Sans", sans-serif;
+    font-size: 1.8rem;
+}
+
+.apresentacao {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+   padding: 5% 15%;
+   align-items: center;
+   gap: 82px;
+}
+
+.apresentacao-conteudo {
+    width: 615px; 
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    align-items: center;
+}
+.apresentacao-conteudo-paragrafo {
+    font-family: "DM Sans", sans-serif;
+    display: flex;
+    font-size: 1.1rem;
+    margin: 5%;
+    align-items: center;
+}
+.imgCaique{
+    width: 50%;
+    height: 50%;
+}
+
+@media(max-width:771px) {
+    
+    .cabeçalho {
+        padding: 10%;
+    }
+    .imgCaique{
+        width: 60%;
+        height: 60%;
+    }
+    .apresentacao{
+        flex-direction: column-reverse;
+    }
+    .cabeçalho-menu{
+        justify-content:center ;
+        padding: 5%;
+    }
+    .apresentacao-conteudo{
+        width: auto;
+    }
+
+}
+
+
+
